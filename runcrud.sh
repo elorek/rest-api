@@ -10,7 +10,7 @@ stop_tomcat()
 start_tomcat()
 {
   $CATALINA_HOME/bin/catalina.sh start
-  enable
+  exit
 }
 
 rename() {
@@ -35,7 +35,7 @@ fail() {
   echo "There were errors"
 }
 
-enable() {
+exit() {
   echo "Work is finished"
 }
 
