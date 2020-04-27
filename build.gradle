@@ -2,7 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.2.6.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id 'war'
+	//id 'war'
 }
 
 group = 'com.crud'
@@ -21,8 +21,9 @@ dependencies {
 	}
 	compileOnly('org.projectlombok:lombok')
 	annotationProcessor('org.projectlombok:lombok')
-	compile('mysql:mysql-connector-java')
-	runtimeOnly("org.springframework.boot:spring-boot-starter-tomcat")
+	compile('org.postgresql:postgresql')
+	//compile('mysql:mysql-connector-java')
+	//runtimeOnly("org.springframework.boot:spring-boot-starter-tomcat")
 }
 
 test {
