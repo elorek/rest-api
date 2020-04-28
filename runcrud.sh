@@ -14,8 +14,8 @@ start_tomcat()
 }
 
 rename() {
-  rm build/libs/crud.war
-  if mv build/libs/kodilla-tasks-new-version-0.0.1-SNAPSHOT.war build/libs/crud.war; then
+  rm ./build/libs/crud.war
+  if mv ./build/libs/tasks-0.0.1-SNAPSHOT.war ./build/libs/crud.war; then
      echo "Successfully renamed file"
   else
      echo "Cannot rename file"
