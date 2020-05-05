@@ -28,16 +28,4 @@ public class CreatedTrelloCard {
 
     @JsonProperty("badges")
     private Badges badges;
-
-
-
-//        JsonFactory factory = new JsonFactory();
-//        ObjectMapper mapper = new ObjectMapper();
-//        JsonParser jsonParser = factory.createParser(jsonResponse);
-//        //JsonParser jsonParser = factory.createParser(jsonToObject().) ?????
-//        MappingIterator<CreatedTrelloCard> createdTrelloCardMappingIterator = mapper.readValues(jsonParser, CreatedTrelloCard.class);
-//        List<CreatedTrelloCard> createdTrelloCardList = createdTrelloCardMappingIterator.readAll();
-//        return createdTrelloCardList;
-
-
 }
