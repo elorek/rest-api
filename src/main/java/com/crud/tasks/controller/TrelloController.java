@@ -21,11 +21,11 @@ public class TrelloController {
     @RequestMapping(method = RequestMethod.GET, value = "getTrelloBoards")
     public List<TrelloBoardDto> getTrelloBoards() {
 
-//        List<TrelloBoardDto> trelloBoards = trelloClient.getTrelloBoards();
+        List<TrelloBoardDto> trelloBoards = trelloClient.getTrelloBoards();
 
-//        trelloBoards.stream().filter(trelloBoardDto -> trelloBoardDto.getName().equals("kodilla"))
-//                .filter(trelloBoardDto -> trelloBoardDto.getId().contains("id"))
-//                .forEach(System.out::println);
+        trelloBoards.stream().filter(trelloBoardDto -> trelloBoardDto.getName().equals("kodilla"))
+                .filter(trelloBoardDto -> trelloBoardDto.getId().contains("id"))
+                .forEach(System.out::println);
 //            System.out.println("This board contains lists: ");
 //            trelloBoardDto.getLists().forEach(trelloList -> System.out.println(trelloList.getId() +
 //                    " - " + trelloList.getName() + " - " + trelloList.isClosed()));
