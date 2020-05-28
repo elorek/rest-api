@@ -87,9 +87,11 @@ public class TrelloClientTest {
         TrelloBoardDto trelloBoards = new TrelloBoardDto();
         URI uri = new URI("http://test.com/members/ewalorek/boards?key=test&token=test&fields=name,id&lists=all");
         System.out.println(uri);
-        //When
         when(restTemplate.getForObject(uri, TrelloBoardDto.class)).thenReturn(null);
+        //When
+        List<TrelloBoardDto> fetchedTrelloBoards = trelloClient.getTrelloBoards();
+
         //Then
-        assertEquals(new ArrayList<>(), trelloBoards.getLists().contains(0));
+        assertEquals(new ArrayList<>(), fetchedTrelloBoards);
     }
 }
